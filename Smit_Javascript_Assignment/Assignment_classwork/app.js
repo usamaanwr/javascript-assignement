@@ -227,3 +227,5 @@ for(var i = 0; i< new_number.length; i++){
 console.log(old_number);
 
 
+var date = date();
+console.log(date);

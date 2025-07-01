@@ -61,7 +61,7 @@ var str = num.toString();
 console.log( "convert to " + typeof str+  " " + str);
 
 var number = 123;
-var con_number = +number;
+var con_number = Number(number);
 console.log( "convert to " + typeof con_number+  " " + num);
 
 
