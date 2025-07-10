@@ -162,6 +162,18 @@ console.log(palindrome());
 // parameter and find the longest word within the string.  
 // EXAMPLE STRING : 'Web Development Tutorial'  
 // EXPECTED OUTPUT : 'Development'
+function String(params) {
+    var CharString = "Web Development Tutorial"
+    var arr = CharString.split(" ");
+    var longestWord = arr[0];
+    for (var i = 0; i< arr.length; i++){
+        if (arr[i].length > longestWord.length) {
+            longestWord = arr[i];
+        }
+    }
+    return longestWord
+}
+console.log(String());
 
 
 // 13. Write a JavaScript function that accepts two arguments, a 

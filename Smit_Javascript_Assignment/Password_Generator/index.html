@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate the password</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Generate a <span>Rondom Password</span></h1>
+      <div class="display">
+        <input type="password" id="password"   placeholder="password" />
+        <img  id="pass" onclick="copytext()" src="./copy-regular-24.png" alt="copy" />
+      </div>
+      <div>
+          <div class="range">
+              <label for="">Password Lenght</label>
+              <input type="range" min="1" max="30" value="8" id="Range_box" />
+            </div>
+            <div class="main_box">
+            <div class="row">
+              <label for="lowercase">Include lowercase letter (a-z)</label>
+              <input type="checkbox" name="lowercase" id="lowercase" />
+            </div>
+
+            <div class="row">
+                <label for="Upercase">Include Upercase letter (A-Z)</label>
+          <input type="checkbox" name="Upercase" id="Upercase" />
+        </div>
+        <div class="row">
+          <label for="Number">Include Number (0-9)</label>
+          <input type="checkbox" name="Number" id="Number" />
+        </div>
+        <div class="row">
+            <label for="Symbol">Include Symbol letter (@-!)</label>
+            <input type="checkbox" name="Symbol" id="Symbol" />
+        </div>
+    </div>
+    </div>
+      <div>
+        <button type="button"   onclick="genbtn()" class="genbtn" id="Generate">
+          Password Generator
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
